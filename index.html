@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap">
+    <script src="portfolio.js" defer></script>
+</head>
+<body>
+    <div id="outline">
+        <nav>
+            <ul id="nav-elements">
+                <li>
+                    <a href="#about">&lt;About&gt;</a>
+                </li>
+                <li>
+                    <a href="#education">&lt;Education&gt;</a>
+                </li>
+                <li>
+                    <a href="#skills">&lt;Skills&gt;</a>
+                </li>
+                <li>
+                    <a href="#experience">&lt;Experience&gt;</a>
+                </li>
+                <li>
+                    <a href="#projects">&lt;Projects&gt;</a>
+                </li>
+                <li>
+                    <a href="#contact">&lt;Contact&gt;</a>
+                </li>
+            </ul> 
+        </nav>
+
+        <style>
+            #typewriter {
+                font-weight: bolder;
+                font-size: 20px;
+                white-space: nowrap;
+                text-wrap: wrap;
+                overflow: hidden; 
+            }
+
+            #typewriter span{
+                color: coral;
+            }
+
+            @media (max-width: 400px){
+                #typewriter{
+                    display: flex;
+                    flex-direction: column;
+                    
+                }
+            }
+
+    
+
+            .cursor {
+                animation: blink 0.75s step-end infinite;
+            }
+
+            @keyframes blink {
+                50% {
+                    opacity: 0;
+                }
+            }
+
+        </style>
+
+        <main>
+            <section id="about" onclick="typeWriter()">
+                <h1 class="headers">
+                ABOUT
+                </h1>
+                <h3 id="header1">
+                    Hi there!
+                </h3>
+
+                <div id="typewriter">
+                    My name is
+                    <span id="typewriter-text"></span>
+                    <span class="cursor">|</span>
+                  </div>
+
+                <p id="paragraph">
+                    I am a Software Developer that is passionate when it comes to developing Software programs which tackle on many different challenges that we face on a day-to-day basis
+                </p>
+                <p id="paragraph2">
+                    I am currently enrolled in my 2nd year, seeking 2024 Spring/Summer Co-op opportunities
+                </p>
+                
+            </section>
+
+
+            <section id="education">
+
+                <h1 class="headers">
+                    EDUCATION
+                </h1>
+
+                <div id="education-container">
+                    <table id="fullscreen-elements">
+                        <tr>
+                            <td>
+                                
+                            </td>
+                            <td>
+                                <div class="mohawk-img">
+                                <img class="moh" src="img/mohawkImg.png" alt="Mohawk Image">
+                                </div>
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="line-point td-item">
+                                Mohawk College of Applied Arts & Technology
+                            </td>
+                            <td rowspan="4" id="college-element">
+                                <div id="straight-line">
+                                    <div id="vertical-line"></div>
+                                </div>
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+                                
+                            </td>
+                            <td class="left-point td-item">
+                                Advanced Diploma
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td class="line-point td-item">
+                                GPA 86.7
+                            </td>
+                            <td>
+                                
+                            </td>
+                            <td>
+                                
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td class="left-point td-item">
+                                Sep 2022 - Dec 2025
+                            </td>
+                            
+                        </tr>
+                    </table>
+
+                    <table id="minimized-elements">
+                        <tr>
+                            <td>
+                                <div class="mohawk-img">
+                                <img class="moh" src="img/mohawkImg.png" alt="Mohawk Image">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="line-point">
+                                Mohawk College of Applied Arts & Technology
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="line-point">
+                                Advanced Diploma
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="line-point">
+                                GPA 86.7
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="line-point">
+                                Sep 2022 - Dec 2025
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    
+                    
+                    
+                    <table id="course-content">
+                        <tr>
+                            <th>
+                                <p>
+                                    Relavent Courses
+                                </p>
+                                <div id="courses">
+                                    <span>
+                                        Data Structures 
+                                        <br>
+                                        & Algorithms
+                                    </span>
+                                    <span>
+                                        Mobile Web
+                                        <br>
+                                        Programming
+                                    </span>
+                                    <span>
+                                        Software Dev
+                                        <br>
+                                        Tools & Practices
+                                    </span>
+                                    <span>
+                                        Web Applic 
+                                        <br>
+                                        ASP.NET
+                                    </span>
+                                    <span>
+                                        Project Management
+                                        <br>
+                                        for IT
+                                    </span>
+                                </div>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+
+            </section>
+            <section id="skills">
+                <h1 class="headers">
+                    SKILLS
+                </h1>
+                <p>
+                    Here, you will see the skills that I am experienced and skilled in
+                </p>
+                <div id="skill-container">
+                    <div class="skills">
+                        <img id="gear" src="img/backend.png" alt=""> 
+                        <h3>Backend</h3>
+                        <div class="tools">
+                            <span>C#</span>
+                            <span>Java</span>
+                            <span>PHP</span>
+                            <span>Python</span>
+                            <span>SQL</span>
+                            <span>ASP.NET</span>
+                            <span>JavaFX</span>
+                            <span>Oracle</span>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <img src="img/frontend.png" alt=""> 
+                        <h3>Frontend</h3>
+                        <div class="tools">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>SVG</span>
+                            <span>XML</span>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="experience">
+                <h1 class="headers">
+                    EXPERIENCE
+                </h1>
+                <div class="jobs">
+                    <div id="experience-container">
+                        <div id="job-elements">
+                            <img src="img/mohawkImg.png" alt="">
+                            <div id="job-title">
+                                <span>
+                                    Mohawk College
+                                </span>
+                                <span>
+                                    Junior Software Developer
+                                </span>
+                            </div>
+                        </div>
+                        <span>
+                            May 2023 - Aug 2023
+                        </span>
+                    </div>
+                    <ul id="job-points">
+                        <li>Engineered Python algorithms for discrete math validation, helping over 100 students and reducing professors' workload by 5+ hours weekly</li>
+                        <li>Refactored 50+ Python scripts, resolving performance bottlenecks and bugs effectively</li>
+                        <li>Enhanced Python scripts with debugging and unit testing, achieving 30% faster execution</li>
+                        <li>Revamped 30+ pages of advanced discrete math problems for an interactive web-based platform, significantly
+                        enhancing user interface and comprehension</li>
+                        <li>Developed over 20 H5P interactive learning objects for web eBooks, elevating engagement and understanding in
+                        digital math courses</li>
+                    </ul>
+                    <div id="skills-in-job">
+                        <span>
+                            Skills:
+                        </span>
+                        <div class="skill-tools">
+                            <span>HTML</span> 
+                            <span>CSS</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="projects">
+                <h1 class="headers">
+                    PROJECTS
+                </h1>
+                <div id="project-container">
+                    <div class="project-item">
+                        <h2>
+                            WeatherAPI
+                        </h2>
+                        <img class="project-img" src="img/weather.png" alt="">
+                        <div class="icons">
+                            <span>
+                                <a href="https://github.com/SamiNachwati/WeatherAPI" target="_blank">&lt;&gt;</a>
+                            </span>
+                            <span>
+                                <a href="https://saminachwati.github.io/WeatherAPI/" target="_blank">
+                                    <img class="visit" src="img/linkIcon.png" alt="">
+                                </a>
+                            </span>
+                        </div>        
+                        <h3>
+                            Skills:
+                        </h3>
+                        <div class="project-skills">
+                            <span>HTML</span> 
+                            <span>CSS</span>
+                            <span>JavaScript (JSON)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-item">
+                        <h2>
+                            RainDash
+                        </h2>
+                        <img class="project-img" src="img/rdimg.png" alt="">
+                        <div class="icons">
+                            <span>
+                                <a href="https://github.com/SamiNachwati/RainDash" target="_blank">&lt;&gt;</a>
+                            </span>
+                            <span>
+                                <a href="https://saminachwati.github.io/RainDash/" target="_blank">
+                                    <img class="visit" src="img/linkIcon.png" alt="">
+                                </a>
+                            </span>
+                        </div>        
+                        <h3>
+                            Skills:
+                        </h3>
+                        <div class="project-skills">
+                            <span>HTML</span> 
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>SVG
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-item">
+                        <h2>
+                            PaintApp
+                        </h2>
+                        <img class="project-img" src="img/drawApp.png" alt="">
+                        <div class="icons">
+                            <span>
+                                <a href="https://github.com/SamiNachwati/PaintApp" target="_blank">&lt;&gt;</a>
+                            </span>
+                            <span>
+                                <a href="https://gist.github.com/SamiNachwati/1719215bdb3bb8ce5a71dd3587da4fe3" target="_blank">
+                                    <img class="visit" src="img/linkIcon.png" alt="">
+                                </a>
+                            </span>
+                        </div>        
+                        <h3>
+                            Skills:
+                        </h3>
+                        <div class="project-skills">
+                            <span>Java</span> 
+                            <span>JavaFX</span>
+                        </div>
+                    </div>  
+                </div>
+            </section>
+            <section id="contact">
+                <h1 class="headers">
+                    CONTACT
+                </h1>
+                <footer>
+                    <a href="https://github.com/SamiNachwati" target="_blank"><img id="github" src="img/github.jpg" alt=""></a>
+                    <a href="https://www.linkedin.com/in/sami-nachwati-519288264/" target="_blank"><img src="img/linkedin.png" alt=""></a>
+                    <a href="mailto:saminachwati94@gmail.com" target="_blank"><img src="img/mail.png" alt=""></a>
+                    <a href="SN_Resume.pdf" target="_blank">
+                        <img id="resume" src="img/resumeDownload.png" alt="">
+                    </a>
+                </footer>
+
+            </section>
+        </main>
+        
+        
+    </div>
+
+</body>
+</html>

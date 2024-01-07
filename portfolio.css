@@ -1,0 +1,446 @@
+body {
+    background: #001A23;
+    color: #4cfda4;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+
+ul#nav-elements {
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+}
+
+
+a {
+    text-decoration: none;
+    color: #4cfda4;
+}
+
+nav {
+    float: left;
+    display: flex;
+    position: sticky;
+    top: 0;
+    padding: 50px 120px;
+    z-index: 100;
+}
+
+main{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 120px;
+}
+
+ul#nav-elements li {
+    list-style: none;
+}
+
+
+.headers {
+    font-style: italic;
+
+}
+
+
+section:not(:first-child) {
+    /* CSS styles here */
+    padding-top: 100px;
+}
+
+
+
+#vertical-line {
+    position: absolute;
+    top: -160px;
+    left: 50%;
+    width: 5px;
+    height: 400px;
+    background-color: #4cfda4;
+
+}
+
+
+.moh {
+    width: 100px;
+    height: 100px;
+    border: 5px solid #4cfda4;
+    border-radius: 50%;
+}
+td{
+    padding: 10px;
+}
+table {
+    width: 80px;
+    padding: 70px;
+}
+#education-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+td img{
+    display: block;
+}
+td div {
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+
+.line-point, .left-point {
+    position: relative;
+}
+
+.line-point::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    left: 90%;
+    width: 75%; /* Adjust as needed */
+    height: 5px; /* Adjust thickness */
+    background-color: #4cfda4;
+    transform: translateY(-50%);
+}
+
+.left-point::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    right: 115%;
+    width: 75%; /* Adjust as needed */
+    height: 5px; /* Adjust thickness */
+    background-color: #4cfda4;
+    transform: translateY(-50%);
+}
+
+.mohawk-img {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+#straight-line {
+    position: relative;
+    height: 100%;
+}
+
+
+
+
+div#courses {
+
+    display: grid;
+    grid-template-columns:auto auto auto;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+
+div#courses span {
+    background-color:#4cfda4;
+    color: #001A23;
+    border-radius: 8px;
+    padding: 8px;
+    text-align: center;
+}
+
+
+div.skills img{
+    width: 15%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    filter: invert(17%) sepia(2%) saturate(4981%) hue-rotate(112deg) brightness(300%) contrast(600%);
+}
+
+
+.skills {
+    border: 2px solid #4cfda4;
+    padding: 20px;
+}
+
+#gear {
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-timing-function:ease;
+}
+
+@keyframes rotate {
+    0%   { transform: rotate(360deg); }
+}
+
+div#skill-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+}
+
+
+.tools {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+.tools span {
+    font-weight: bolder;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #4cfda4;
+    color: #001A23;
+    text-align: center;
+}
+
+
+
+@media (max-width:950px){
+    #outline{
+        display: flex;
+        flex-direction: column;
+    }
+    ul#nav-elements {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap:5px;
+    }
+    nav {
+        padding: 0px;
+        justify-content: center;
+        background-color: #001A23;
+    }
+}
+
+#minimized-elements {
+    display: none;
+}
+
+.jobs {
+    border: 2px solid #4cfda4;
+}
+
+#experience-container {
+    display: flex;
+    justify-content: left;
+    padding: 25px;
+    gap: 15em;
+}
+
+#experience-container img {
+    width: 40px;
+    height: 40px;
+}
+
+#job-elements {
+    display: flex;
+    gap: 20px;
+}
+
+#job-points li {
+    padding: 10px;
+}
+
+#job-title {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+
+#skills-in-job {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.skill-tools {
+    display: flex;
+    gap: 10px;
+}
+
+.skill-tools span {
+    font-weight: bolder;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #4cfda4;
+    color: #001A23;
+    text-align: center;
+}
+
+#project-container img.project-img {
+    width: 60%;
+    object-fit: contain;
+}
+
+.visit {
+    width: 20px;
+    height: 20px;
+    filter: invert(17%) sepia(2%) saturate(4981%) hue-rotate(112deg) brightness(300%) contrast(600%);
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icons span {
+    font-size: 30px;
+}
+
+
+#project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+}
+
+#project-container div.project-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.project-skills span {
+    font-weight: bolder;
+    background-color:#4cfda4;
+    color: #001A23;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+
+.project-skills {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+@media (max-width:1520px){
+    #education-container {
+        grid-template-columns: auto;
+    }
+}
+
+@media (max-width: 1260px) {
+
+    .project-skills  {
+        flex-direction: column;
+    }
+
+    #project-container {
+        grid-template-columns: 1fr;
+        gap: 100px;
+        align-content: baseline;
+    }
+
+    
+}
+
+@media (max-width: 760px)
+{
+    #project-container div.project-item, #project-container div.project-item img {
+        align-items:baseline;
+    }
+
+    #project-container div.project-item img.project-img {
+        width: 60%;
+        aspect-ratio: auto;
+    }
+
+    #education-container {
+        grid-template-columns: auto;
+        justify-items: center;
+    }
+
+
+}
+
+
+@media (max-width: 1000px){
+    .jobs #experience-container, #job-elements{
+        display: flex;
+        flex-direction: column;
+    }
+    #experience-container {
+        gap: 0;
+    }
+
+    #skills-in-job{
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 1200px){
+
+    #fullscreen-elements {
+        display: none;
+    }
+
+    #minimized-elements {
+        display: grid;
+        justify-content: center;
+    }
+
+
+    .line-point {
+        text-align: right;
+    }
+
+    .line-point:before{
+        position: sticky;
+        display: flex;
+        top: 0;
+        
+    }
+    div#courses{
+        grid-template-columns:auto;
+    }
+
+    #course-content {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    div#skill-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .tools {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+#contact {
+    margin-top: 100px;
+}
+
+footer img {
+    padding-top: 105px;
+    width: 60px;
+}
+
+#resume{
+    filter: contrast(0%);
+}
+
+#github {
+    mix-blend-mode:exclusion;
+}
+
+footer {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+
+}
